@@ -21,14 +21,19 @@
          text-align: center;
      }
 
-     .c{
-         background-color: grey;
-     }
-      
-     .m{
+     .mh, .me{
          text-align: left;
+         background-color:rgb(155, 152, 152);
+         color: white;
+         font-size: 15px;
      }
-     
+   
+     .area, .disc, .notas, .n1, .n2, .m{
+         text-align: center;
+         background-color:rgb(155, 152, 152);
+         color: white;
+         font-size: 15px;
+     } 
 
 </style>
 
@@ -38,21 +43,20 @@
     <h1>Nota Média das Disciplinas</h1>
 
     <table>
-        
-             <tr>
-                <th rowspan="6"> Área</th>
-                <th rowspan="6"> Disciplinas</th>
-                <th colspan="3"> Notas</th>
-                <th rowspan="3"> Média </th>
+            <tr>
+                <th rowspan="6" scope="rowgroup" class="area"> Área</th>
+                <th rowspan="6" scope="rowgroup" class="disc"> Disciplinas</th>
+                <th colspan="3" scope="colgroup" class ="notas"> Notas</th>
+                <th rowspan="3" scope="rowgroup" class="m"> Média </th>
              </tr>
-     
+            
              <tr>
-                <th>Notas 1</th> 
-                <th>Notas 2</th>  
+                <th class="n1">Notas 1</th> 
+                <th class="n2">Notas 2</th>  
             </tr>
         
         
-         <tbody>
+           <tbody>
                 <tr>
                   <th rowspan="4" scope="rowgroup">Exatas</th>
                 </tr> 
@@ -61,28 +65,28 @@
                     <td>Matemática</td>
                     <td>7</td>
                     <td>6</td>
-                    <td colspan="2">6.5</td>
+                    <td colspan="2" scope="colgroup" >6.5</td>
                 </tr>
                 
                 <tr>
                     <td>Física</td>
                     <td>7</td>
                     <td>8</td>
-                    <td colspan="2">7.5</td>
+                    <td colspan="2" scope="colgroup">7.5</td>
                 </tr>
                  
                 <tr>
                     <td>Química</td>
                     <td>9</td>
                     <td>7</td>
-                    <td colspan="2">8</td>   
+                    <td colspan="2" scope="colgroup">8</td>   
                 </tr>
             <tbody>   
                 
             <tbody>
                   <tr>
-                     <th colspan="5" class="m">Média de Exatas</th>
-                     <td>8</td> 
+                     <th colspan="5" scope="colgroup" class="me">Média de Exatas</th>
+                     <td class="m">7.3</td> 
                   </tr>                
             </tbody>
 
@@ -95,31 +99,30 @@
                     <td>História</td>
                     <td>6</td>
                     <td>9</td>
-                    <td colspan="2">7.5</td> 
+                    <td colspan="2" scope="colgroup">7.5</td> 
                 </tr>
                 
                 <tr>  
                     <td>Geografia</td>
                     <td>8</td>
                     <td>9</td>
-                    <td colspan="2">8.5</td>
+                    <td colspan="2" scope= "colgroup">8.5</td>
                 </tr>
                  
                <tr>
                    <td>Biologia</td>
                    <td>6</td>
                    <td>8</td>
-                   <td colspan="2">7</td>
+                   <td colspan="2" scope="colgroup">7</td>
                </tr>
          </tbody> 
 
          <tbody>
             <tr>
-               <th colspan="5" scope="rowgroup" class="m">Média Humanas</th> 
-               <td>7.5</td>
+               <th colspan="5" scope="rowgroup" class="mh">Média de Humanas</th> 
+               <td class="m">7.6</td>
             </tr>                
       </tbody>
-
     </table>
 
 </body>
